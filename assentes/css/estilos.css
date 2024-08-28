@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(193, 205, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+header{
+    font-family:'Montserrat';
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.nome, .numero{
+    outline: none;
+    border: none;
+    height:30px;
+    font-size: 18px;
+    border-bottom:2px solid #b3b0b0;
+    background-color: aliceblue;
+    font-family:'Montserrat';
+    width: 350px;
+    text-align: center; 
+}
+.numero {
+    width: 200px;
+}
+
+.botao{
+    padding: 10px 20px;
+    border: none;
+    background-color: #00c3ff;
+    border-radius: 10px;
+    color: white;
+    font-family:'Montserrat';
+    cursor: pointer;
+    margin-top: 10px;
+}
+.botao:hover{
+    border: 1px solid rgba(0, 110, 255, 0.651);
+    margin-top: 9px;
+}
