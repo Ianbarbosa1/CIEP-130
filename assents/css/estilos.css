@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(193, 205, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+    content: '';
+    background-image: url(../imagens/background\ img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+    font-family:'Montserrat';
+    height: 500px;
+    width: 500px;
+    background-color: rgba(240, 248, 255, 0.281);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgb(74, 134, 232);
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.nome, .numero{
+    outline: none;
+    border: none;
+    height:30px;
+    font-size: 18px;
+    border-bottom:1px solid #3a3333;
+    background-color: rgba(247, 245, 245, 0);
+    font-family:'Montserrat';
+    width: 350px;
+    text-align: center; 
+    font-weight:400;
+}
+.nome::placeholder, .numero::placeholder{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.numero {
+    width: 200px;
+}
+
+.botao{
+    padding: 10px 50px;
+    border: none;
+    background-color: rgb(74, 134, 232);
+    border-radius: 10px;
+    color: white;
+    font-family:'Montserrat';
+    cursor: pointer;
+    margin-top: 10px;
+}
+.botao:hover{
+    color: black;
+}
+
+embed{
+    height: 450px;
+    width: 850px;
+    border: 1px solid rgb(74, 134, 232);
+    border-radius: 20px ;
+}
