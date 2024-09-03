@@ -5,12 +5,11 @@
 }
 
 body{
-    background-color: rgb(193, 205, 214);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
-    gap: 50px;
     content: '';
     background-image: url(../imagens/background\ img.jpg);
     background-position: center;
@@ -18,7 +17,14 @@ body{
     background-size: cover;
 }
 
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 
+/*FORMULÁRIO DE CADASTRO*/
 header{
     font-family:'Montserrat';
     height: 500px;
@@ -33,7 +39,6 @@ header{
     backdrop-filter: blur(4px);
     border: 1px solid rgb(74, 134, 232);
 }
-
 h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-family: sans-serif;
@@ -41,7 +46,6 @@ h1{
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
-
 form{
     display: flex;
     justify-content: center;
@@ -49,7 +53,6 @@ form{
     flex-direction: column;
     gap: 50px;
 }
-
 .nome, .numero{
     outline: none;
     border: none;
@@ -69,7 +72,6 @@ form{
 .numero {
     width: 200px;
 }
-
 .botao{
     padding: 10px 50px;
     border: none;
@@ -84,9 +86,87 @@ form{
     color: black;
 }
 
+
+/*PLANILHA*/
 embed{
     height: 450px;
     width: 850px;
-    border: 1px solid rgb(74, 134, 232);
+    border: 2px solid rgb(74, 134, 232);
     border-radius: 20px ;
+}
+
+
+/*DOCUMENTAÇÃO*/
+#botao{
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    border-radius: 20px 10px;
+    background-color: rgba(240, 248, 255, 0.404);
+    margin-top: 50px;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    transition: all 0.5s ease-in-out;
+    font-family:'Montserrat';
+}
+#botao:hover{
+    color: white;
+    border: 1px solid white;
+    font-family:'Montserrat';
+}
+article{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: +1;
+    display: none ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#fechar{
+    padding: 5px;
+    color: red;
+    font-size: 30px;
+    position: relative;
+    right: 300px;
+    top: 45px;
+    cursor: pointer;
+    z-index: +1;
+}
+#fechar:hover{
+    color: white;
+}
+.documentacao{
+    background-color: rgba(240, 248, 255, 0.555);
+    width: 650px;
+    max-height: 700px;
+    overflow-y: auto;
+    font-family:'Montserrat';
+    padding: 20px;
+    backdrop-filter: blur(50px);
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgb(74, 134, 232);
 }
