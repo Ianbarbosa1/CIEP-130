@@ -15,3 +15,16 @@ function enviar(){
         alert('Cadastro efetuado com sucesso!')
     }
 }
+
+
+let abrirModal = document.querySelector('#botao').addEventListener('click', abrir)
+let modal = document.querySelector('#modal')
+
+function abrir(){
+    modal.style.display = 'flex'
+}
+
+let fecharModal = document.querySelector('#fechar').addEventListener('click', fechar)
+function fechar(){
+    modal.style.display = 'none'
+}
