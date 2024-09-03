@@ -8,29 +8,64 @@
     <link rel="stylesheet" href="./assents/css/responsivo.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>PREENCHIMENTO DE DADOS</h1>
-        
-        <form action="https://api.sheetmonkey.io/form/4DqAC1FPkvYMncrHZP1t9H" method="post" autocomplete="off">
-            <nav>
-                <input type="text" name="Nome" placeholder="Nome do aluno" required class="nome">
+    <article id="modal">
+        <div id="fechar">✖</div>
+        <div class="documentacao">
+            <h2>DOCUMENTAÇÃO</h2>
+
+            <h3>CADASTRO DE ALUNOS</h3>
+            <nav> 
+                <p>O primeiro quadrado a esquerda é utilizado para cadastrar o aluno que ainda não consta no sistema com o número do arquivo. Existem algumas observações que devem ser consideradas para que esse cadastro seja feito corretamente.</p>
+                <a href="https://youtu.be/TeOXlP9jSC8" title="Video sobre o cadastro de alunos">Saiba mais +</a>
+                <p>⭐ Ambos os campos de nome e número do arquivo deverão ser preenchidos corretamente, caso isso não aconteça o site não permitirá o cadastro.</p>
+                <p>⭐ Verifique se o nome e o número estão corretos para evitar problemas futuros.</p>
+                <p>⭐ Antes de fazer a inserção do aluno, verifique se o nome já se encontra no banco, evitando duplicações.</p>
+                <p>⭐ Caso ocorra um cadastro que foi inserido incorretamente, contacte a pessoa que tem o total acesso do banco no qual recebe os dados que são inseridos <strong>(Antonieta)</strong> .</p>
+                <a href="https://youtu.be/Pf6LyiOW4eo"title="Video sobre a edição dos dados">Saiba mais +</a>
             </nav>
 
-            <nav>
-                <input type="number" name="Número" placeholder="Número do Arquivo" required class="numero">
+            <h3>PESQUISA DOS ALUNOS</h3>
+            <nav> 
+                <p>O retangulo a direita da tela é o local de pesquisa dos dados que estão localizado no "banco de dados", existe algumas partes no qual você <strong>NÃO</strong>  poderá modificar, pois você não terá permissão.</p>
+                <a href="https://youtu.be/FMvnZDCQA7A" title="Video sobre a pesquisa dos alunos cadastrados">Saiba mais +</a>
+                <p>O único campo que é alterável é o "Pesquisar🔎", <strong>localizado na coluna A e linha 2</strong>, caso você clique em qualquer outro campo deste retangulo, você receberá um aviso dizendo que este campo está bloqueado.</p>
+                <p>Também é importante frisar que <strong>não pode deixar a barra de pesquisa vazia e clicar na coluna B ou C, por padrão sempre deixe em "Pesquisar🔎" ou se preferir deixe o nome do último aluno que você cadastrou.</strong><p>
+                <br>
+                <p>Para que seja evitado alguns problemas em questão de posicionamento e problemas como exclusão da página principal de pesquisa:</p>
+                <p>❌ <strong>NÃO ADICIONE LINHAS.</strong></p>
+                <p>❌ <strong>NÃO EXCLUA PÁGINAS.</strong></p>
+                <p>❌ <strong>NÃO INSIRA PÁGINAS.</strong></p>
+                <a href="https://youtu.be/VzZFUybG4rs" title="Video sobre não excluir a página de pesquisa">Saiba mais +</a>
             </nav>
+        </div>
+    </article>
 
-            <div> 
-                <input type="submit" class="botao" value="Cadastrar">
-            </div>
-        </form>
-    </header>
+    <section>
+        <header title="CADASTRO DE ALUNOS">
+            <h1>PREENCHIMENTO DE DADOS</h1>
+            
+            <form action="https://api.sheetmonkey.io/form/4DqAC1FPkvYMncrHZP1t9H" method="post" autocomplete="off">
+                <nav>
+                    <input type="text" name="Nome" placeholder="Nome do Aluno" required class="nome">
+                </nav>
 
-    <embed src="https://docs.google.com/spreadsheets/d/103k6xf0F_EP7DwgQhlGfbcAGP_l5LI1gGjD5990AhIk/edit?gid=1275279602#gid=1275279602">
+                <nav>
+                    <input type="number" name="Número" placeholder="Número do Arquivo" required class="numero">
+                </nav>
+
+                <div> 
+                    <input type="submit" class="botao" value="Cadastrar">
+                </div>
+            </form>
+        </header>
+
+        <embed src="https://docs.google.com/spreadsheets/d/103k6xf0F_EP7DwgQhlGfbcAGP_l5LI1gGjD5990AhIk/edit?gid=1275279602#gid=1275279602">
+    </section>
+
+    <input type="button" value="Documentação 📃" id="botao">
 
     <script src="./assents/js/script.js"></script>
 </body>
