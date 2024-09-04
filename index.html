@@ -23,7 +23,7 @@
                 <p>⭐ Ambos os campos de nome e número do arquivo deverão ser preenchidos corretamente, caso isso não aconteça o site não permitirá o cadastro.</p>
                 <p>⭐ Verifique se o nome e o número estão corretos para evitar problemas futuros.</p>
                 <p>⭐ Antes de fazer a inserção do aluno, verifique se o nome já se encontra no banco, evitando duplicações.</p>
-                <p>⭐ Caso ocorra um cadastro que foi inserido incorretamente, contacte a pessoa que tem o total acesso do banco no qual recebe os dados que são inseridos <strong>(Antonieta)</strong> .</p>
+                <p>⭐ Caso ocorra um cadastro que foi inserido incorretamente, contacte a pessoa que tem o total acesso do banco no qual recebe os dados que são inseridos <strong>(Antonieta)</strong>, a edição do dos dados apenas pode ser feita pela conta dela.</p>
                 <a href="https://youtu.be/Pf6LyiOW4eo"title="Video sobre a edição dos dados">Saiba mais +</a>
             </nav>
 
@@ -43,7 +43,8 @@
         </div>
     </article>
 
-    <section>
+    <section class="container-cadastro">
+        <div id="fechar-two">✖</div>
         <header title="CADASTRO DE ALUNOS">
             <h1>PREENCHIMENTO DE DADOS</h1>
             
@@ -61,11 +62,17 @@
                 </div>
             </form>
         </header>
+    </section>
 
+    <section class="container-pesquisa">
         <embed src="https://docs.google.com/spreadsheets/d/103k6xf0F_EP7DwgQhlGfbcAGP_l5LI1gGjD5990AhIk/edit?gid=1275279602#gid=1275279602">
     </section>
 
-    <input type="button" value="Documentação 📃" id="botao">
+    <section class="botoes">
+        <input type="button" value="Cadastrar +" id="cadastrar">
+        <a href="https://docs.google.com/spreadsheets/d/103k6xf0F_EP7DwgQhlGfbcAGP_l5LI1gGjD5990AhIk/edit?gid=0#gid=0" id="editar">Editar🖋</a>
+        <input type="button" value="Documentação 📃" id="botao">
+    </section>
 
     <script src="./assents/js/script.js"></script>
 </body>
