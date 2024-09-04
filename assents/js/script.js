@@ -17,14 +17,25 @@ function enviar(){
 }
 
 
-let abrirModal = document.querySelector('#botao').addEventListener('click', abrir)
-let modal = document.querySelector('#modal')
-
-function abrir(){
-    modal.style.display = 'flex'
+let abrirDoc = document.querySelector('#botao').addEventListener('click', abrirDocumentacao)
+let modalDoc = document.querySelector('#modal')
+function abrirDocumentacao(){
+    modalDoc.style.display = 'flex'
 }
 
-let fecharModal = document.querySelector('#fechar').addEventListener('click', fechar)
-function fechar(){
-    modal.style.display = 'none'
+let fecharDoc = document.querySelector('#fechar').addEventListener('click', fecharDocumentacao)
+function fecharDocumentacao(){
+    modalDoc.style.display = 'none'
+}
+
+
+let ModalCad = document.querySelector('.container-cadastro')
+let abrirCad = document.querySelector('#cadastrar').addEventListener('click', abrirCadastro)
+function abrirCadastro(){
+    ModalCad.style.display = 'flex'
+}
+
+let fecharModalCad = document.querySelector('#fechar-two').addEventListener('click', fecharCadastro)
+function fecharCadastro(){
+    ModalCad.style.display = 'none'
 }
