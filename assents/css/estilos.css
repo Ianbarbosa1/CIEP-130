@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:'Montserrat';
 }
 
 body{
@@ -9,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
     content: '';
     background-image: url(../imagens/background\ img.jpg);
     background-position: center;
@@ -50,7 +51,6 @@ body{
     color: white;
 }
 header{
-    font-family:'Montserrat';
     height: 500px;
     width: 500px;
     background-color: rgba(240, 248, 255, 0.281);
@@ -84,7 +84,6 @@ form{
     font-size: 18px;
     border-bottom:1px solid #3a3333;
     background-color: rgba(247, 245, 245, 0);
-    font-family:'Montserrat';
     width: 350px;
     text-align: center; 
     font-weight:400;
@@ -102,7 +101,6 @@ form{
     background-color: rgb(74, 134, 232);
     border-radius: 10px;
     color: white;
-    font-family:'Montserrat';
     cursor: pointer;
     margin-top: 10px;
 }
@@ -152,7 +150,6 @@ article{
     width: 650px;
     max-height: 700px;
     overflow-y: auto;
-    font-family:'Montserrat';
     padding: 20px;
     backdrop-filter: blur(50px);
 }
